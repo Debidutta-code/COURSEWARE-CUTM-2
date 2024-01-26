@@ -228,6 +228,10 @@ server.get('/teacherlogindetails', async (req, res) => {
   }
 })
 
+server.get('/', (req, res) => {
+  res.json("hello world")
+})
+
 server.listen(PORT, () => {
   console.log(`server running on port ${PORT}`);
 });
