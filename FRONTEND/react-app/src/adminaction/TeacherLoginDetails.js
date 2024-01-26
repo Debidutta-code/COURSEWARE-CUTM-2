@@ -15,7 +15,7 @@ const TeacherLoginDetails = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:8080/teacherlogindetails", {
+        const response = await fetch("https://courseware-cutm-backend.onrender.com/teacherlogindetails", {
           method: "GET",
         });
 

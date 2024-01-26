@@ -25,7 +25,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch(`http://localhost:8080/teacher/authentication/${username}/${password}`, {
+    const response = await fetch(`https://courseware-cutm-backend.onrender.com/teacher/authentication/${username}/${password}`, {
       method: "GET",
     });
 
@@ -42,7 +42,7 @@ const Login = () => {
 
       // Send data to the server
       // Send data to the server
-      await fetch("http://localhost:8080/teacherlogindetails", {
+      await fetch("https://courseware-cutm-backend.onrender.com/teacherlogindetails", {
         method: "POST",
         headers: {
           'Content-Type': 'application/json',

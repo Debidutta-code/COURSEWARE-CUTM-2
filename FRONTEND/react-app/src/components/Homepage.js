@@ -12,7 +12,7 @@ const Homepage = () => {
 
   const fetchData = async () => {
     try { 
-      const response = await fetch('http://localhost:8080/homepagecontent');
+      const response = await fetch('https://courseware-cutm-backend.onrender.com/homepagecontent');
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }

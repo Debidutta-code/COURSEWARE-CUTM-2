@@ -14,7 +14,7 @@ const AddCourses = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("http://localhost:8080/techer/addcourses", {
+    const response = await fetch("https://courseware-cutm-backend.onrender.com/techer/addcourses", {
       method: "POST",
       body: JSON.stringify({
         subjectName,

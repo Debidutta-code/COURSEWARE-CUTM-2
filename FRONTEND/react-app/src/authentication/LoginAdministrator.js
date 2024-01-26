@@ -25,7 +25,7 @@ const LoginAdministrator = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch(`http://localhost:8080/administrator/authentication/${username}/${password}`, {
+    const response = await fetch(`https://courseware-cutm-backend.onrender.com/administrator/authentication/${username}/${password}`, {
       method: "GET",
     });
 

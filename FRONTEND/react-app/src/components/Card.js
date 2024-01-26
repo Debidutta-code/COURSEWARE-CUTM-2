@@ -5,7 +5,7 @@ const Card = ({ course }) => {
   const history = useHistory();
 
   const cardClicked = async () => {
-    const response = await fetch(`http://localhost:8080/cardclicked/${course['subject_code']}`, {
+    const response = await fetch(`https://courseware-cutm-backend.onrender.com/cardclicked/${course['subject_code']}`, {
       method: "GET",
     });
 

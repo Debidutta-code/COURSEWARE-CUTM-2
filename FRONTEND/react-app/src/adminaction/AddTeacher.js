@@ -22,7 +22,7 @@ const AddTeacher = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const response = await fetch("http://localhost:8080/addteacher", {
+        const response = await fetch("https://courseware-cutm-backend.onrender.com/addteacher", {
             method: "POST",
             body: JSON.stringify({ name, email, password }),
             headers: {
