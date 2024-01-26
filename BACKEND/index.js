@@ -14,10 +14,8 @@ main().catch(err => console.log(err));
 
 async function main() {
   try {
-    await mongoose.connect(MongoDB_String, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    await mongoose.connect(MongoDB_String);
+
     console.log("db connected");
   } catch (error) {
     console.error("MongoDB connection error:", error);
