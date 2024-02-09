@@ -12,6 +12,7 @@ const Homepage = () => {
 
   const fetchData = async () => {
     try { 
+      // http://localhost:3000/home
       const response = await fetch('https://courseware-cutm-backend.onrender.com/homepagecontent');
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
@@ -52,7 +53,7 @@ const Homepage = () => {
       <div>
         <button onClick={handleRefresh} className='refresh-data-btn'>Refresh Courses</button>
       </div>
-      {loading && <p>Loading...</p>}
+      {loading && <p>Loading... (This may take several seconds to get a response from the backend because the developer is using a free instance of the backend in the render) </p>}
       {error && <p>Error: {error}</p>}
 
       {!loading && !error && (
